@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="14mm"
+   height="14mm"
+   viewBox="0 0 14 14"
+   version="1.1"
+   id="svg368"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs365">
+    <linearGradient
+       id="linearGradient830"
+       x1="7.0298052"
+       y1="1.4546608"
+       x2="7.0298052"
+       y2="12.322004"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#linearGradient826"
+       gradientTransform="matrix(0.80588957,0,0,0.81760861,1.2857464,1.362019)">
+      <stop
+         style="stop-color:currentColor;stop-opacity:0"
+         offset="0"
+         id="stop822" />
+      <stop
+         style="stop-color:currentColor;stop-opacity:0.80000001"
+         offset="0.44586837"
+         id="stop2919" />
+      <stop
+         style="stop-color:currentColor;stop-opacity:0.80000001"
+         offset="0.54818541"
+         id="stop1152" />
+      <stop
+         style="stop-color:currentColor;stop-opacity:0"
+         offset="1"
+         id="stop824" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient831"
+       x1="7.0298052"
+       y1="1.793928"
+       x2="7.0298052"
+       y2="12.257022"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.81994889,0,0,0.81994889,1.2779807,1.260402)">
+      <stop
+         style="stop-color:#fff;stop-opacity:0"
+         offset="0"
+         id="stop854" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.7"
+         offset="0.44586837"
+         id="stop856" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.7"
+         offset="0.54818541"
+         id="stop858" />
+      <stop
+         style="stop-color:#fff;stop-opacity:0"
+         offset="1"
+         id="stop860" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1">
+    <path
+       id="backdrop"
+       style="display:inline;fill:url(#linearGradient830);fill-opacity:1;paint-order:stroke markers"
+       d="m 7.0191676,1.6542735 c 2.7698571,0 5.0406444,2.1908208 5.2501804,4.9484456 0.01055,0.1364566 -0.445735,0.4309555 -0.445735,0.4309555 0,0 0.455336,0.2862292 0.443229,0.4339656 -0.224495,2.7390788 -2.4884656,4.8780858 -5.2476744,4.8780858 -2.7699739,0 -5.0610778,-2.155731 -5.2723699,-4.9101756 -0.01055,-0.1372818 0.4424149,-0.416289 0.4424149,-0.416289 0,0 -0.4531121,-0.2743565 -0.4429085,-0.4096805 C 1.9544838,3.8487293 4.2470158,1.6542735 7.0191676,1.6542735 Z"
+       fill="url(#linearGradient830)"
+       stroke-width="20.0776px" />
+    <path
+       id="c2"
+       style="display:inline;fill:url(#linearGradient831);paint-order:stroke markers"
+       d="M 6.7357643,1.6543617 C 4.0023208,1.7819448 1.8568862,3.704872 1.5214021,6.3034079 c -0.045291,-0.064801 -0.075284,-0.110503 -0.075284,-0.110503 0,0 -0.78331354,0.8263546 -1.4461202,0.8263546 0.66819484,0 1.4461202,0.8263549 1.4461202,0.8263549 0,0 0.030144,-0.045702 0.075284,-0.1104992 0.336931,2.5987468 2.4915895,4.4930838 5.2335826,4.6106108 C 4.1061205,12.208158 1.9543708,10.068957 1.7472084,7.435642 1.9180477,7.2278842 2.1258318,7.0192614 2.2724883,7.0192614 c -0.146649,0 -0.3544519,-0.2086244 -0.5252799,-0.4163803 0.2071624,-2.6365546 2.3589121,-4.8088095 5.0077763,-4.9485194 -0.00641,2.777e-4 -0.012811,-2.973e-4 -0.01922,0 z m 0.5573113,0 c 2.6475642,0.1380316 4.7662194,2.3100062 4.9709404,4.946918 -0.173062,0.2126524 -0.386246,0.4323949 -0.536489,0.4323949 0.149588,0 0.362214,0.2173999 0.534888,0.429192 -0.216432,2.6215154 -2.3291415,4.7468914 -4.967738,4.8828594 2.730275,-0.11643 4.850754,-1.996357 5.195145,-4.580183 0.03783,0.054598 0.06406,0.094485 0.06406,0.094485 0,0 0.783313,-0.826355 1.44612,-0.826355 -0.20558,0 -0.421544,-0.078219 -0.622049,-0.186529 -0.45119,-0.2437301 -0.824075,-0.639824 -0.824075,-0.639824 0,0 -0.02449,0.038938 -0.06085,0.091283 C 12.159599,3.6952855 10.033855,1.7720633 7.2930794,1.6543609 Z"
+       fill="url(#linearGradient831)"
+       stroke-width="19.6466px" />
+  </g>
+</svg>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ビルドカード</title>
+
+    <script src="script/buildcard.js" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/debug.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+    <div class="buildcard flex vertical">
+        <div id="row1" class="flex">
+            <div id="overview">
+                <img id="char-img" src="https://enka.network/ui/UI_Gacha_AvatarImg_Yelan.png" alt="">
+                <div class="abs-lefttop">
+                    <div id="char-name">神里綾人</div>
+                    <div id="under-char-name" class="flex">
+                        <div>Lv.90</div>
+                        <div id="friendship" class="flex">
+                            <img class="friendship-icon" src="./icon/friendship.svg"></img>
+                            <div>10</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abs-leftbottom">
+                    <div id="skill1" class="skill">
+                        <img class="skillbg" src="./icon/skill.svg">
+                        <img class="skillicon" src="https://enka.network/ui/Skill_A_Catalyst_MD.png">
+                        <div class="skilllevel">Lv7</div>
+                    </div>
+                    <div id="skill2" class="skill">
+                        <img class="skillbg" src="./icon/skill.svg">
+                        <img class="skillicon" src="https://enka.network/ui/Skill_A_Catalyst_MD.png">
+                        <div class="skilllevel">Lv7</div>
+                    </div>
+                    <div id="skill3" class="skill">
+                        <img class="skillbg" src="./icon/skill.svg">
+                        <img class="skillicon" src="https://enka.network/ui/Skill_A_Catalyst_MD.png">
+                        <div class="skilllevel">Lv7</div>
+                    </div>
+                </div>
+                <div class="abs-rightbottom">
+                    <div id="talent1" class="talent">
+                        <img class="talentbg" src="./icon/hyd_ascent_enab.svg">
+                        <img class="talenticon" src="https://enka.network/ui/UI_Talent_S_Yelan_01.png">
+                    </div>
+                    <div id="talent2" class="talent">
+                        <img class="talentbg" src="./icon/hyd_ascent_enab.svg">
+                        <img class="talenticon" src="https://enka.network/ui/UI_Talent_S_Yelan_02.png">
+                    </div>
+                    <div id="talent3" class="talent">
+                        <img class="talentbg" src="./icon/hyd_ascent_enab.svg">
+                        <img class="talenticon" src="https://enka.network/ui/UI_Talent_U_Yelan_01.png">
+                    </div>
+                    <div id="talent4" class="talent">
+                        <img class="talentbg" src="./icon/hyd_ascent_enab.svg">
+                        <img class="talenticon" src="https://enka.network/ui/UI_Talent_S_Yelan_03.png">
+                    </div>
+                    <div id="talent5" class="talent">
+                        <img class="talentbg" src="./icon/hyd_ascent_enab.svg">
+                        <img class="talenticon" src="https://enka.network/ui/UI_Talent_U_Yelan_02.png">
+                    </div>
+                    <div id="talent6" class="talent">
+                        <img class="talentbg" src="./icon/hyd_ascent_enab.svg">
+                        <img class="talenticon" src="https://enka.network/ui/UI_Talent_S_Yelan_04.png">
+                    </div>
+                </div>
+            </div>
+            <div id="status" class="round-corner flex vertical">
+                <div id="status-hp" class="flex">
+                    <img class="status-icon svgicon" src="./icon/hp.svg"></img>
+                    <div class="status-title">HP</div>
+                    <div class="right">
+                        <div class="status-main-value">00,000</div>
+                        <div class="status-sub-value">00,000+00,000</div>
+                    </div>
+                </div>
+                <div id="status-atk" class="flex">
+                    <img class="status-icon svgicon" src="./icon/atk.svg"></img>
+                    <div class="status-title">攻撃力</div>
+                    <div class="right">
+                        <div class="status-main-value">0,000</div>
+                        <div class="status-sub-value">000+0,000</div>
+                    </div>
+                </div>
+                <div id="status-def" class="flex">
+                    <img class="status-icon svgicon" src="./icon/def.svg"></img>
+                    <div class="status-title">防御力</div>
+                    <div class="right">
+                        <div class="status-main-value">000</div>
+                        <div class="status-sub-value">000+000</div>
+                    </div>
+                </div>
+                <div id="status-elmas" class="flex">
+                    <img class="status-icon svgicon" src="./icon/elmas.svg"></img>
+                    <div class="status-title">元素熟知</div>
+                    <div class="right">
+                        <div class="status-main-value">00</div>
+                        <div class="status-sub-value" hidden>00,000+00,000</div>
+                    </div>
+                </div>
+                <div id="status-crt" class="flex">
+                    <img class="status-icon svgicon" src="./icon/crt.svg"></img>
+                    <div class="status-title">会心率</div>
+                    <div class="right">
+                        <div class="status-main-value">00.0%</div>
+                        <div class="status-sub-value" hidden>00,000+00,000</div>
+                    </div>
+                </div>
+                <div id="status-crtdmg" class="flex">
+                    <img class="status-icon svgicon" src="./icon/crt_dmg.svg"></img>
+                    <div class="status-title">会心ダメージ</div>
+                    <div class="right">
+                        <div class="status-main-value">000.0%</div>
+                        <div class="status-sub-value" hidden>00,000+00,000</div>
+                    </div>
+                </div>
+                <div id="status-charge" class="flex">
+                    <img class="status-icon svgicon" src="./icon/charge.svg"></img>
+                    <div class="status-title">元素チャージ効率</div>
+                    <div class="right">
+                        <div class="status-main-value">000.0%</div>
+                        <div class="status-sub-value" hidden>00,000+00,000</div>
+                    </div>
+                </div>
+                <div id="status-elmdmg" class="flex" hidden>
+                    <img class="status-icon svgicon" src="./icon/physic.svg"></img>
+                    <div class="status-title">○元素ダメージ</div>
+                    <div class="right">
+                        <div class="status-main-value">00.0%</div>
+                        <div class="status-sub-value" hidden>00,000+00,000</div>
+                    </div>
+                </div>
+            </div>
+            <div id="r1c3" class="flex vertical">
+                <div id="weapon" class="round-corner">
+                    <div class="flex">
+                        <div id="weaponimg">
+                            <div id="weapon-refinement">R5</div>
+                            <img src="https://enka.network/ui/UI_EquipIcon_Bow_Kirin_Awaken.png">
+                            <div id="weapon-reality">★★★★★</div>
+                        </div>
+                        <div style="width: 2px; background-color: rgba(255,255,255,0.3);"></div>
+                        <div id="weaponstat" class="flex vertical">
+                            <div id="weapon-name">若水</div>
+                            <div id="weapon-level">Level 90/90</div>
+                            <div>
+                                <img id="weapon-mainstat-icon" class="weapon-icon" src="./icon/atk.svg"></img>
+                                <div id="weapon-mainstat-title" class="status-title">基礎攻撃力</div>
+                                <div class="right">
+                                    <div id="weapon-mainstat-value" class="status-main-value">000</div>
+                                </div>
+                            </div>
+                            <div>
+                                <img id="weapon-substat-icon" class="weapon-icon" src="./icon/crt_dmg.svg"></img>
+                                <div id="weapon-substat-title" class="status-title">会心ダメージ</div>
+                                <div class="right">
+                                    <div id="weapon-substat-value" class="status-main-value">00.0%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="relic-set" class="round-corner">
+                    <div class="flex">
+                        <div id="relic-set-icon">
+                            <img src="./icon/goblet.png">
+                        </div>
+                        <div id="relic-set-list" class="flex vertical">
+                            <div class="flex">
+                                <div style="color: rgb(0, 255, 0);">遣唐使のフィナーレ</div>
+                                <div class="relic-set-num">4 set</div>
+                            </div>
+                            <div class="flex" hidden>
+                                <div style="color: rgb(0, 255, 0);">遣唐使のフィナーレ</div>
+                                <div class="relic-set-num">4 set</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="total-score" class="round-corner sepalate">
+                    <div id="total-score-main" class="sepalate-body">
+                        <div>スコア合計</div>
+                        <div id="total-score-text" class="abs-center" style="font-size: 3em">200.5</div>
+                    </div>
+                    <div id="total-score-footer" class="sepalate-footer">
+                        <div>
+                            <div id="total-score-footer-comment">攻撃力換算</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row2" class="flex">
+            <div id="relic-1" class="sepalate relic round-corner">
+                <div class="sepalate-body relic-main">
+                    <div>
+                        <img class="relic-img abs-lefttop" src="https://enka.network/ui/UI_RelicIcon_15027_4.png">
+                        <div class="relic-mainstat abs-righttop">
+                            <div class="relic-mainstat-title flex">
+                                <div>HP</div>
+                                <img class="relic-mainstat-icon" src="./icon/hp.svg">
+                            </div>
+                            <div class="relic-mainstat-score">4,780</div>
+                            <div class="relic-level">
+                                <div>+20</div>
+                            </div>
+                        </div>
+                        <div class="relic-substat-list abs-bottom">
+                            <div class="reric-substat reric-substat1 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat2 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat3 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat4 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sepalate-footer relic-footer">
+                    <div>
+                        <div class="flex">
+                            <div style="margin-top: auto; font-size: 1.2em; color: gray;">Score</div>
+                            <div class="relic-score" style="margin-top: auto; font-size: 1.7em;">40.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="relic-2" class="sepalate relic round-corner">
+                <div class="sepalate-body relic-main">
+                    <div>
+                        <img class="relic-img abs-lefttop" src="https://enka.network/ui/UI_RelicIcon_15027_4.png">
+                        <div class="relic-mainstat abs-righttop">
+                            <div class="relic-mainstat-title flex">
+                                <div>HP</div>
+                                <img class="relic-mainstat-icon" src="./icon/hp.svg">
+                            </div>
+                            <div class="relic-mainstat-score">4,780</div>
+                            <div class="relic-level">
+                                <div>+20</div>
+                            </div>
+                        </div>
+                        <div class="relic-substat-list abs-bottom">
+                            <div class="reric-substat reric-substat1 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat2 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat3 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat4 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sepalate-footer relic-footer">
+                    <div>
+                        <div class="flex">
+                            <div style="margin-top: auto; font-size: 1.2em; color: gray;">Score</div>
+                            <div class="relic-score" style="margin-top: auto; font-size: 1.7em;">40.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="relic-3" class="sepalate relic round-corner">
+                <div class="sepalate-body relic-main">
+                    <div>
+                        <img class="relic-img abs-lefttop" src="https://enka.network/ui/UI_RelicIcon_15027_4.png">
+                        <div class="relic-mainstat abs-righttop">
+                            <div class="relic-mainstat-title flex">
+                                <div>HP</div>
+                                <img class="relic-mainstat-icon" src="./icon/hp.svg">
+                            </div>
+                            <div class="relic-mainstat-score">4,780</div>
+                            <div class="relic-level">
+                                <div>+20</div>
+                            </div>
+                        </div>
+                        <div class="relic-substat-list abs-bottom">
+                            <div class="reric-substat reric-substat1 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat2 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat3 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat4 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sepalate-footer relic-footer">
+                    <div>
+                        <div class="flex">
+                            <div style="margin-top: auto; font-size: 1.2em; color: gray;">Score</div>
+                            <div class="relic-score" style="margin-top: auto; font-size: 1.7em;">40.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="relic-4" class="sepalate relic round-corner">
+                <div class="sepalate-body relic-main">
+                    <div>
+                        <img class="relic-img abs-lefttop" src="https://enka.network/ui/UI_RelicIcon_15027_4.png">
+                        <div class="relic-mainstat abs-righttop">
+                            <div class="relic-mainstat-title flex">
+                                <div>HP</div>
+                                <img class="relic-mainstat-icon" src="./icon/hp.svg">
+                            </div>
+                            <div class="relic-mainstat-score">4,780</div>
+                            <div class="relic-level">
+                                <div>+20</div>
+                            </div>
+                        </div>
+                        <div class="relic-substat-list abs-bottom">
+                            <div class="reric-substat reric-substat1 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat2 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat3 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat4 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sepalate-footer relic-footer">
+                    <div>
+                        <div class="flex">
+                            <div style="margin-top: auto; font-size: 1.2em; color: gray;">Score</div>
+                            <div class="relic-score" style="margin-top: auto; font-size: 1.7em;">40.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="relic-5" class="sepalate relic round-corner">
+                <div class="sepalate-body relic-main">
+                    <div>
+                        <img class="relic-img abs-lefttop" src="https://enka.network/ui/UI_RelicIcon_15027_4.png">
+                        <div class="relic-mainstat abs-righttop">
+                            <div class="relic-mainstat-title flex">
+                                <div>HP</div>
+                                <img class="relic-mainstat-icon" src="./icon/hp.svg">
+                            </div>
+                            <div class="relic-mainstat-score">4,780</div>
+                            <div class="relic-level">
+                                <div>+20</div>
+                            </div>
+                        </div>
+                        <div class="relic-substat-list abs-bottom">
+                            <div class="reric-substat reric-substat1 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat2 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat3 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                            <div class="reric-substat reric-substat4 flex">
+                                <img class="reric-substat-icon" src="./icon/physic.svg"></img>
+                                <div class="reric-substat-title">○元素ダメージ</div>
+                                <div class="right">
+                                    <div class="reric-substat-main-value">00.0%</div>
+                                    <div class="reric-substat-sub-value">0.0 + 0.0 + 0.0 + 0.0 + 0.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sepalate-footer relic-footer">
+                    <div>
+                        <div class="flex">
+                            <div style="margin-top: auto; font-size: 1.2em; color: gray;">Score</div>
+                            <div class="relic-score" style="margin-top: auto; font-size: 1.7em;">40.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
